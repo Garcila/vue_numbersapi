@@ -17,14 +17,14 @@ export default {
   components: {
     Header,
     NumberItem,
-    SearchNumber
+    SearchNumber,
   },
   data() {
     return {
       trivia: '',
       math: '',
       year: '',
-      date: ''
+      date: '',
     };
   },
   mounted() {
@@ -55,8 +55,8 @@ export default {
     axios
       .get(`http://numbersapi.com/${e}/date`)
       .then(response => (this.date = response.data));
-    }
-  }
+    },
+  },
 };
 </script>
 

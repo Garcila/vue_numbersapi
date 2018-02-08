@@ -1,6 +1,6 @@
 <template>
   <div class="SearchNumber">
-    <input @keyup.enter="goAndSearch" type="text" v-model="desiredNumber" placeholder="Enter a number, year or date">
+    <input @keyup.enter="goAndSearch" type="text" v-model="desiredNumber" placeholder="type a number">
   </div>
 </template>
 
@@ -9,15 +9,15 @@ export default {
   name: 'SearchNumber',
   data() {
     return {
-      desiredNumber: ''
+      desiredNumber: '',
     };
   },
   methods: {
-    goAndSearch () {
-      this.$emit('goSearch', this.desiredNumber)
-      this.desiredNumber = ''
-    }
-  }
+    goAndSearch() {
+      this.$emit('goSearch', this.desiredNumber);
+      this.desiredNumber = '';
+    },
+  },
 };
 </script>
 
@@ -29,6 +29,15 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+.SearchNumber {
+  padding: 1rem;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 </style>

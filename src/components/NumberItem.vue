@@ -21,9 +21,9 @@ export default {
   props: ['trivia', 'year', 'math', 'date'],
   data() {
     return {
-      msg: '#########'
+      msg: '#########',
     };
-  }
+  },
 };
 </script>
 
@@ -41,8 +41,9 @@ h2 {
   font-weight: normal;
 }
 .numberItem {
-  padding: 5rem 2rem;
+  padding: 1rem 2rem;
 }
+
 .item {
   display: flex;
   align-items: baseline;

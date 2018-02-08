@@ -10,9 +10,9 @@ export default {
   name: 'Header',
   data() {
     return {
-      msg: 'There is a # for that'
+      msg: 'There is a # for that',
     };
-  }
+  },
 };
 </script>
 
@@ -39,7 +39,7 @@ export default {
 }
 
 .number {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 19rem;
   height: 25vh;
 }
